@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/main.js"></script>
+  <title>Safe Area offset</title>
+</head>
+<body>
+  <header>
+    <div class="">
+      このヘッダーはstickyです
+      <br>cssでposition: sticky指定をしています。
+    </div>
+  </header>
+  <article>
+    <h1>'viewport-fit=cover'無し</h1>
+    <section>
+      absoluteでのbottomが吹っ飛ぶか検証
+    </section>
+    <h1>safe area padding 無し</h1>
+    <section>
+      safeArea外への干渉ができるかも検証
+    </section>
+    <h2>offset list</h2>
+    <section id="offsetList">
+      
+    </section>
+    
+    <h2>User Agent</h2>
+    <section id="ua">
+      
+    </section>
+    
+    
+    <h2>sticky系について</h2>
+    <section>
+      <p>
+        safaAreaなしでもsticky headerは今まで通りの指定で大丈夫そう。
+        <br>footer固定ができない感じ???
+        <br>
+        
+      </p>
+    </section>
+    
+    <section>
+      <a href="index.html">safe area ありのページへ</a>
+    </section>
+  </article>
+  <footer>
+    <div class="">
+      このfooterはstickyです
+      <br>cssでposition: sticky指定をしています。
+    </div>
+  </footer>
+</body>
+</html>
