@@ -1,6 +1,6 @@
 'use strict';
 
-var body,rect,$echoTarget,tops,left,bottom,right,width,Xs,Ys,height;
+var body,rect,$echoTarget,tops,left,bottom,right,width,Xs,Ys,height,$trigger,$modal;
 
 var ua = function($target){
    ua.naked = window.navigator.userAgent;
@@ -35,6 +35,11 @@ window.onload = function(){
   $echoTarget = document.getElementById('offsetList');
   echo($echoTarget);
   ua(document.getElementById('ua'));
+  $trigger = document.getElementById('trigger');
+  $modal = document.getElementById('modal');
+  $trigger.addEventListener('click',function(){
+    $modal.classList.toggle('is-visible');
+  });
 };
 
 window.onscroll = function(){

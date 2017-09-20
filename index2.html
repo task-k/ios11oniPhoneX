@@ -18,13 +18,15 @@
   <article>
     <h1>'viewport-fit=cover'無し</h1>
     <section>
-      absoluteでのbottomが吹っ飛ぶか検証
+      fixed > fiexdでのbottomが吹っ飛ぶか検証
+      <br>
+      <span id="trigger">モーダルを開く</span>
     </section>
     <h1>safe area padding 無し</h1>
     <section>
       safeArea外への干渉ができるかも検証
     </section>
-    <h2>offset list</h2>
+    <h2>document body offset list</h2>
     <section id="offsetList">
       
     </section>
@@ -49,10 +51,19 @@
       <a href="index.html">safe area ありのページへ</a>
     </section>
   </article>
+  
+  <div id="modal">
+    <div class="bottomBox">
+      問題はコレです。
+      <br>bottom位置からfixedの場合
+    </div>
+  </div>
   <footer>
     <div class="">
       このfooterはstickyです
       <br>cssでposition: sticky指定をしています。
+      <br>このfotterにpadding-bottom: constant(safe-area-inset-bottom);
+
     </div>
   </footer>
 </body>
