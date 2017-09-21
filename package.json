@@ -1,7 +1,6 @@
 {
   "name": "omotesandohills",
   "version": "1.0.0",
-  "description": "表参道ヒルズサイト",
   "main": "gulpfile.js",
   "engines": {
     "node": "8.x",
